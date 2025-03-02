@@ -1,10 +1,15 @@
 import { useEffect, useState } from 'react'
-import Signup from './components/SignupPage'
+import Signup from './components/regitsrations/SignupPage'
+import Navigation from './components/regitsrations/Navigation';
 function App() {
-  const [userData,setUserData] = useState([]);
+  const base = [];
+  useEffect(() =>{
+    localStorage.setItem("DataBase",JSON.stringify(base))
+},[base])
   return (
     <>
-      <Signup/>
+      <Navigation />
+      <Signup data={base}/>
     </>
   )
 }
