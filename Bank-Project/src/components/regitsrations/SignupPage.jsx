@@ -4,10 +4,13 @@ import "./Signup.css"
 import google from "./images/google.png"
 import facebook from "./images/facebook.png"
 import apple from "./images/apple.png"
+import article from "./images/article.png"
+import Navigation from "../Navigation";
+import Footer from "../footer";
 
 const Signup = () => {
     const [userData, handleSubmit] = useForm();
-    const [review, setReview] = useState("For-individuals")
+    const [review, setReview] = useState("")
     const [individualReview, setIndividualReview] = useState([])
     const [buisnessReview, setBuisnessReview] = useState([])
 
@@ -38,6 +41,8 @@ const Signup = () => {
 
 
     return (
+        <>
+        <Navigation/>
         <main id="Signup">
             <div id="registrationBlock">
                 <div id="Background">
@@ -94,43 +99,55 @@ const Signup = () => {
                     </span>
                     <div id="decision">
                         <span>
-                            <button onClick={setIndividuals} style={review === "For-individuals" ? { backgroundColor: "#caff33", width: 155, height: 50, borderRadius: 25, border: "none" } : { border: "none", color: "white", height: 50, background: "transparent" }}>For Individuals</button>
-                            <button onClick={setBuisness} style={review === "For-Buisness" ? { backgroundColor: "#caff33", width: 155, height: 50, borderRadius: 25, border: "none" } : { border: "none", color: "white", height: 50, background: "transparent" }}>For Buisness</button>
+                            <button id="individuals" onClick={setIndividuals} style={review === "For-individuals" ? { backgroundColor: "#caff33",} : { color: "white", background: "transparent" }}>For Individuals</button>
+                            <button id="buisness" onClick={setBuisness} style={review === "For-Buisness" ? { backgroundColor: "#caff33"} : {  color: "white", background: "transparent" }}>For Buisness</button>
                         </span>
 
                     </div>
 
                 </div>
-                <div>
+                <div id="reviews">
+
+
                     {
                         review === "For-Buisness" ? (
-                            <div>
+                            <div id="reviews-child" style={{ display: review === "For-Buisness" ? "flex" : "none" }}>
                                 {buisnessReview.map(item => {
                                     return (
-                                        <>
+                                        <div id="review">
+                                            <div id="article">
+                                                <div></div>
+                                                <img src={article} alt="" />
+                                                <div></div>
+                                            </div>
+
+
                                             <p>{item.review}</p>
-                                            <p>{item.name}</p>
-                                        </>
+                                            <h3>{item.name}</h3>
+                                        </div>
                                     )
 
 
                                 })}
                             </div>
                         ) : (
-                            <div>
+                            <div id="reviews-child" style={{ display: review === "For-individuals" ? "flex" : "none" }}>
                                 {
                                     individualReview.map(item => {
                                         return (
-                                            <div>
-                                                <div>
 
-
-                                                    <p>{item.review}</p>
-                                                    <p>{item.name}</p>
+                                            <div id="review">
+                                                <div id="article">
+                                                    <div></div>
+                                                    <img src={article} alt="" />
+                                                    <div></div>
                                                 </div>
-                                            </div>
-                                        )
 
+                                                <p>{item.review}</p>
+                                                <h3>{item.name}</h3>
+                                            </div>
+
+                                        )
                                     })
                                 }
                             </div>
@@ -142,6 +159,8 @@ const Signup = () => {
 
 
         </main>
+        <Footer />
+        </>
     );
 };
 

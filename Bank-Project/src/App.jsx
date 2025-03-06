@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Signup from './components/regitsrations/SignupPage'
-import Navigation from './components/regitsrations/Navigation';
+import Navigation from './components/Navigation';
 function App() {
   const base = [];
   useEffect(() =>{
@@ -8,7 +8,6 @@ function App() {
 },[base])
   return (
     <>
-      <Navigation />
       <Signup data={base}/>
     </>
   )
