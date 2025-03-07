@@ -34,16 +34,24 @@
         color: white;
     }
 
-    ul {
+    #navigation nav ul {
         list-style: none;
         display: flex;
         width: 100%;
         justify-content: space-evenly;
     }
 
-    li a {
-        text-decoration: none;
+    #navigation nav ul li a {
+        font-size: 1.5rem;
+        box-shadow: inset 0 0 0 0 #54b3d6;
         color: white;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        text-decoration: none;
+    }
+
+    #navigation nav ul li a:hover {
+        color: black;
+        box-shadow: inset 200px 0 0 0 #caff33;
     }
 
     nav {
@@ -401,6 +409,13 @@
         display: flex;
         gap: 45px;
         justify-content: center;
+        list-style: none;
+    }
+
+
+    #pages ul li a {
+        color: white;
+        text-decoration: none;
     }
 
     .line {
@@ -482,7 +497,12 @@
 
 
 
-@media screen and (max-width:1360px) {
+@media screen and (max-width:1440px) {
+
+
+    #logoDiv h2 {
+        font-size: 1.3rem;
+    }
 
     #signupHeader h1 {
         font-size: 2.3rem;
@@ -491,6 +511,10 @@
     #navigation {
         width: 80%;
         height: 55%;
+    }
+
+    #navigation nav ul li a {
+        font-size: 1.3rem;
     }
 
     #logo {
@@ -518,6 +542,11 @@
 }
 
 @media screen and (max-width:1024px) {
+
+    #navigation nav ul li a {
+        font-size: 1.1rem;
+    }
+
     #signupHeader h1 {
         font-size: 2.3rem;
     }
@@ -580,7 +609,8 @@
         justify-content: flex-end;
         background-color: #1c1c1cbd;
     }
-    #back{
+
+    #back {
         width: 40%;
         height: 100%;
         background-image: url(/src/components/regitsrations/images/signup-background.jpg);
@@ -594,7 +624,7 @@
         background-color: #191919c7;
         animation: sidebar 0.50s;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-direction: column;
         background-image: url(../Source-images/Abstract\ Design-right.png);
         background-repeat: no-repeat;
@@ -609,25 +639,94 @@
     #head button {
         background: transparent;
         border: none;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+
     }
 
     #head button img {
         width: 100%;
     }
 
-    #body{
+    #body {
         height: 40%;
     }
 
-    #body ul{
+    #body ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        list-style: none;
     }
-    #body ul li a{
-        font-size: 1.5rem
+
+    #body ul li a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: white;
+
+    }
+
+
+
+    #registrationBlock {
+        height: 90vh;
+    }
+
+    #signupHeader {
+        width: 70%;
+        text-align: center;
+    }
+
+    #form form {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #privacy {
+        flex-direction: column;
+        height: 135px;
+    }
+
+    #pages ul {
+        gap: 30px;
+    }
+
+    #contact {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #location{
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #signupHeader h1{
+        font-size: 2rem;
+    }
+
+    #continue-with div{
+        width: 85px;
+    }
+
+
+    #sub-accounts{
+        gap: 25px;
+    }
+    #testimonials-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    #text{
+        width: 100%;
+    }
+    #review:nth-child(2){
+        display: none;
     }
 }

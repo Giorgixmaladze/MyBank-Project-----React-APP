@@ -22,15 +22,15 @@ const Footer= () => {
             </div>
             <div className="line"></div>
             <div id="contact">
-                <span>
+                <span id="mail">
                     <img src={mail} alt="" />
                     <p>hello@world.com</p>
                 </span>
-                <span>
+                <span id="phone">
                     <img src={phone} alt="" />
                     <p>+91 91813 23 2309</p>
-                </span>
-                <span>
+                </span >
+                <span id="location">
                     <img src={location} alt="" />
                     <p>Somewhere in the World</p>
                 </span>
