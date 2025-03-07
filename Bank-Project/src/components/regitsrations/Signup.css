@@ -707,12 +707,16 @@
 }
 
 @media screen and (max-width:425px) {
+    #logoDiv h2{
+        font-size: 1.2rem;
+    }
+
     #signupHeader h1{
         font-size: 2rem;
     }
 
     #continue-with div{
-        width: 85px;
+        width: 80px;
     }
 
 

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import useForm from "../hooks/useForm";
+import useForm from "../../hooks/useForm";
 import "./Signup.css"
 import google from "./images/google.png"
 import facebook from "./images/facebook.png"
 import apple from "./images/apple.png"
 import article from "./images/article.png"
-import Navigation from "./Navigation";
-import Footer from "./footer";
+import Navigation from "../Navigation";
+import Footer from "../footer";
 
 const Signup = () => {
     const [userData, handleSubmit] = useForm();
