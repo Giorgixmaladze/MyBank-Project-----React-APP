@@ -7,6 +7,8 @@ const useForm = () => {
         const storedInfo = localStorage.getItem("Users");
         return storedInfo ? JSON.parse(storedInfo) : [];
     });
+    const [curUser,setCurUser] = useState([])
+    const [signedUp,setSignedUp] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -22,13 +24,17 @@ const useForm = () => {
             alert("Account With This Email Already Exists");
         } else {
             setInfo(prev => [...prev, infoObj]);
+            setSignedUp(true)
+            setCurUser([infoObj])
         }
     };
 
     
     useEffect(() => {
         localStorage.setItem("Users", JSON.stringify(info));
-    }, [info]);
+        localStorage.setItem("registered",signedUp)
+        localStorage.setItem("curUser", JSON.stringify(curUser))
+    }, [info,curUser,signedUp]);
 
     return [info, handleSubmit];
 };

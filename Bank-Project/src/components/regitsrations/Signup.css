@@ -580,7 +580,20 @@
 }
 
 @media screen and (max-width:900px) {
+    #testimonials{
+        width: 70%;
+    }
+    #testimonials-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    #text {
+        width: 100%;
+    }
 
+    #review:nth-child(2) {
+        display: none;
+    }
     nav,
     #registrationLinks {
         display: none;
@@ -701,36 +714,76 @@
         align-items: center;
     }
 
-    #location{
+    #location {
         grid-column: 1/3;
     }
 }
 
 @media screen and (max-width:425px) {
-    #logoDiv h2{
+
+    #registrationBlock {
+        height: 95vh;
+    }
+
+    #logoDiv h2 {
         font-size: 1.2rem;
     }
 
-    #signupHeader h1{
+    #signupHeader h1 {
         font-size: 2rem;
     }
 
-    #continue-with div{
+    #continue-with div {
         width: 80px;
     }
 
 
-    #sub-accounts{
-        gap: 25px;
+    #sub-accounts {
+        gap: 9px;
     }
-    #testimonials-header{
+
+    #testimonials-header {
         flex-direction: column;
         align-items: center;
     }
-    #text{
+
+    #text {
         width: 100%;
     }
-    #review:nth-child(2){
+
+    #review:nth-child(2) {
         display: none;
+    }
+
+    #google,
+    #facebook,
+    #apple {
+        width: 75px;
+        height: 75px;
+    }
+
+    #google button img,
+    #facebook button img,
+    #apple button img {
+        width: 25px;
+    }
+
+    #review {
+        gap: 30px;
+    }
+
+    #logo {
+        gap: 25px;
+    }
+
+    #logo h2 {
+        font-size: 1.3rem;
+    }
+
+    #logo img {
+        width: 35px;
+    }
+    #continue-with{
+        gap: 5px;
     }
 }

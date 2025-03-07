@@ -14,6 +14,8 @@ const Signup = () => {
     const [individualReview, setIndividualReview] = useState([])
     const [buisnessReview, setBuisnessReview] = useState([])
 
+
+
     const setIndividuals = () => {
         const reviewList = [
             { name: "Sara T", review: "YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze." },
@@ -33,6 +35,8 @@ const Signup = () => {
         setReview("For-Buisness")
         setBuisnessReview(buisnessReviews)
     }
+
+    
 
     console.log(individualReview)
     console.log(buisnessReview)
