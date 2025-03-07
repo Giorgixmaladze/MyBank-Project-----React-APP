@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Signup from './components/regitsrations/SignupPage'
+import Signup from './components/SignupPage'
 import Navigation from './components/Navigation';
 function App() {
 
