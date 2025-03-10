@@ -5,12 +5,12 @@ import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import Login from './components/regitsrations/Login';
 function App() {
   const navigate = useNavigate()
-  const signedUp = JSON.parse(localStorage.getItem("registered"))
+  const signedUp = JSON.parse(localStorage.getItem("signed"))
   useEffect(() => {
-    if (!signedUp) {
-      navigate('/')
+    if (signedUp) {
+      navigate('/login')
     }else{
-      navigate("/login")
+      navigate("/")
     }
   }, [])
 

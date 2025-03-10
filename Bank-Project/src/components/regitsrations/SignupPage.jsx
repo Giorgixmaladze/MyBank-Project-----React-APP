@@ -7,6 +7,7 @@ import apple from "./images/apple.png"
 import article from "./images/article.png"
 import Navigation from "../Navigation";
 import Footer from "../footer";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
     const [userData, handleSubmit] = useForm();
@@ -36,7 +37,7 @@ const Signup = () => {
         setBuisnessReview(buisnessReviews)
     }
 
-    
+
 
     console.log(individualReview)
     console.log(buisnessReview)
@@ -47,8 +48,8 @@ const Signup = () => {
     return (
         <>
             <Navigation />
-            <main id="Signup">
-                <div id="registrationBlock">
+            <main id="Signup" className="login">
+                <div id="registrationBlock" className="loginBlock"  >
                     <div id="Background">
                         <div id="background2">
                             <div id="signupHeader">
@@ -62,8 +63,10 @@ const Signup = () => {
                                     <input type="email" placeholder="Enter your Email" required name="email" />
                                     <input type="password" placeholder="Enter your Password" name="password" />
                                     <button>Submit</button>
+
                                 </form>
                                 <button id="loginButton">Login</button>
+                                <Link to="/login">Already Have Account? Login</Link>
                                 <div id="continue-with">
                                     <div></div>
                                     <p>Or Continue With</p>

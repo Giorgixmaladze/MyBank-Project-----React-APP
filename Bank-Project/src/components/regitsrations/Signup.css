@@ -185,6 +185,12 @@
         color: white;
     }
 
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
     #continue-with {
         width: 100%;
         display: flex;
@@ -785,5 +791,8 @@
     }
     #continue-with{
         gap: 5px;
+    }
+    #sub-accounts{
+        gap: 10px;
     }
 }
