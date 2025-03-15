@@ -62,11 +62,14 @@ const Signup = () => {
                                     <input type="text" placeholder="Enter Last Name" required name="lastname" />
                                     <input type="email" placeholder="Enter your Email" required name="email" />
                                     <input type="password" placeholder="Enter your Password" name="password" />
-                                    <button>Submit</button>
+                                    <button>Sign Up</button>
 
                                 </form>
-                                <button id="loginButton">Login</button>
-                                <Link to="/login">Already Have Account? Login</Link>
+                                <button id="loginButton">
+                                    <Link to="/login">
+                                        Login
+                                    </Link>
+                                </button>
                                 <div id="continue-with">
                                     <div></div>
                                     <p>Or Continue With</p>
@@ -140,10 +143,10 @@ const Signup = () => {
                             ) : (
                                 <div id="reviews-child" style={{ display: review === "For-individuals" ? "flex" : "none" }}>
                                     {
-                                        individualReview.map(item => {
+                                        individualReview.map((item, index) => {
                                             return (
 
-                                                <div id="review">
+                                                <div key={index} id="review">
                                                     <div id="article">
                                                         <div></div>
                                                         <img src={article} alt="" />

@@ -10,10 +10,10 @@ import Footer from "../footer";
 import login from "../utils/Login";
 
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-
+    const navigate = useNavigate()
     const [review, setReview] = useState("")
     const [individualReview, setIndividualReview] = useState([])
     const [buisnessReview, setBuisnessReview] = useState([])
@@ -55,14 +55,20 @@ const Login = () => {
                                 <p>Welcome back! Please log in to access your account.</p>
                             </div>
                             <div id="form">
-                                <form onSubmit={login} >
+                                <form onSubmit={(e)=> login(e,navigate)} >
                                     <input type="email" placeholder="Enter your Email" required name="email" />
                                     <input type="password" placeholder="Enter your Password" name="password" />
-                                    <button>Submit</button>
+                                    <button>Log In</button>
 
                                 </form>
-                                <button id="loginButton">Login</button>
-                                <Link to="/">Don't Have An Account? Sign Up</Link>
+                                <button id="signupButton">
+
+                                    <Link to="/signup">
+                                        Sign Up
+                                    </Link>
+
+
+                                </button>
                                 <div id="continue-with">
                                     <div></div>
                                     <p>Or Continue With</p>

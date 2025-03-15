@@ -175,8 +175,8 @@
     }
 
 
-    #loginButton {
-        width: 400px;
+    #loginButton, #signupButton {
+        width: 340px;
         height: 55px;
         border-radius: 30px;
         background-color: #262626;
@@ -184,6 +184,8 @@
         border: none;
         color: white;
     }
+
+    
 
 
     a{

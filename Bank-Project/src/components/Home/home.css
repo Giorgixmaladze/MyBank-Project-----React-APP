@@ -1,0 +1,141 @@
+#container {
+    background-image: url(./images/background.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+
+}
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    margin-top: 40px;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#top {
+    width: 90%;
+    height: 600px;
+    display: flex;
+}
+
+#left,
+#right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#exchange {
+    width: 520px;
+    height: 470px;
+    border: 1px solid rgba(128, 128, 128, 0.269);
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+#exchange span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#exchange h2 {
+    color: white;
+    text-align: left;
+}
+
+.from {
+    width: 120px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+#exchangeTo {
+    background-color: #22251b;
+    color: #CAFF33;
+    width: 100%;
+}
+
+select {
+    width: 100px;
+    height: 50px;
+    background-color: #22251b;
+    color: white;
+    border-radius: 10px;
+}
+
+.from {
+    font-size: 20px;
+}
+
+#exchange form {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#right {
+    background-image: url(/src/components/Home/images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#products {
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+}
+
+#products-top {
+    display: flex;
+    width: 100%;
+    gap: 400px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+#header h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+#header h2 span {
+    color: #CAFF33;
+}
+
+#header p {
+    color: gray;
+}
+
+#decision {
+    display: flex;
+    width: 270px;
+    align-items: center;
+}
+
+#decision span {
+    display: flex;
+    align-items: center;
+    border: 1px solid #80808038;
+    border-radius: 62px;
+    width: 100%;
+    background-color: #1C1C1C;
+    gap: 15px;
+    justify-content: center;
+    height: 70px;
+}
