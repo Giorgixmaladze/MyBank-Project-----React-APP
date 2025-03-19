@@ -1,5 +1,5 @@
 #container {
-    background-image: url(./images/background.png);
+    background-image: url(/public/home-images/background.png);
     min-height: 100vh;
     background-repeat: no-repeat;
 
@@ -85,7 +85,7 @@ select {
 }
 
 #right {
-    background-image: url(/src/components/Home/images/arrow.png);
+    background-image: url(/public/home-images/arrow.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -94,6 +94,7 @@ select {
     display: flex;
     width: 85%;
     flex-direction: column;
+    gap: 50px;
 }
 
 #products-top {
@@ -138,4 +139,61 @@ select {
     gap: 15px;
     justify-content: center;
     height: 70px;
+}
+
+
+#job,
+#save,
+#money,#seperate,#customSettings,#cashFlow {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #1C1C1C;
+    box-shadow: 0px 0px 3px 0px #CAFF33;
+    animation: spread 1.5s infinite alternate;
+    border-radius: 50%;
+}
+
+#job img,#save img, #money img,#seperate img, #customSettings img, #cashFlow img{
+    width: 30px;
+}
+
+#benefits{
+    display: flex;
+    gap: 70px;
+   
+}
+#benefits div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    border-right: 1px solid #80808036;
+    box-shadow: 20px 0px 20px 0px #121212;
+    border-radius: 10px;
+    height: 250px;
+}
+
+#benefits div h2{
+    color: white;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+#benefits div p{
+    color: gray;
+
+}
+
+#case-head h2{
+    font-size: 2.5rem;
+    color: #CAFF33;
+}
+
+#case-head p{
+    color: grey;
 }
