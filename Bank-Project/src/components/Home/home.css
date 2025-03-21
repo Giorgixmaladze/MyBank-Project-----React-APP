@@ -12,6 +12,7 @@
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+    gap: 80px;
 
 }
 
@@ -144,7 +145,11 @@ select {
 
 #job,
 #save,
-#money,#seperate,#customSettings,#cashFlow {
+#money,
+#seperate,
+#customSettings,
+#cashFlow,
+.benefits div {
     width: 60px;
     height: 60px;
     display: flex;
@@ -157,16 +162,22 @@ select {
     border-radius: 50%;
 }
 
-#job img,#save img, #money img,#seperate img, #customSettings img, #cashFlow img{
+#job img,
+#save img,
+#money img,
+#seperate img,
+#customSettings img,
+#cashFlow img {
     width: 30px;
 }
 
-#benefits{
+#benefits {
     display: flex;
     gap: 70px;
-   
+
 }
-#benefits div{
+
+#benefits div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,22 +189,218 @@ select {
     height: 250px;
 }
 
-#benefits div h2{
+#benefits div h2 {
     color: white;
     font-weight: 300;
     font-size: 1.3rem;
 }
 
-#benefits div p{
+#benefits div p {
     color: gray;
 
 }
 
-#case-head h2{
+
+#cases {
+    width: 85%;
+}
+
+#case-head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#case-head h2 {
     font-size: 2.5rem;
     color: #CAFF33;
 }
 
-#case-head p{
+#case-head p {
     color: grey;
+}
+
+#ind {
+    height: 550px;
+    width: 85%;
+    display: flex;
+    gap: 50px;
+}
+
+#ind-left,
+#buis-right {
+    width: 50%;
+    height: 100%;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    background-image: url(../../../public/home-images/cases.png);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.benefits {
+    background-color: #191919;
+    width: 275px;
+    height: 180px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.113);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#ind-right,
+#buis-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    justify-content: space-evenly;
+
+}
+
+.benefits h3 {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+
+}
+
+#ind-right span,
+#buis-left span {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#ind-h2,
+#buis-h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+}
+
+#ind-right span p {
+    color: grey;
+}
+
+.percentages {
+
+    display: flex;
+    gap: 50px;
+}
+
+.percentages span {
+    width: 150px;
+}
+
+.percent {
+    font-size: 3rem;
+    color: #caff33;
+    font-weight: 500;
+}
+
+.dashedLine {
+    height: 100%;
+    border: 1px dashed gray;
+}
+
+#ind-right button {
+    background-color: #1c1c1c;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #8080804d;
+
+}
+
+#buis {
+    display: flex;
+    width: 85%;
+    height: 500px;
+}
+
+#buis-left {
+    width: 50%;
+}
+
+#buis-right {
+    width: 50%;
+}
+
+
+#buis-left span p {
+    color: gray;
+}
+
+#features {
+    width: 85%;
+}
+
+#features-header {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#features-header h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+#features-header h2 span {
+    color: #CAFF33;
+}
+
+#features-header p {
+    color: gray;
+}
+
+#features-body {
+    display: flex;
+    height: 550px;
+    gap: 50px;
+}
+
+#list {
+    background-color: #1c1c1c;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+#list button{
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.155);
+    background-color: transparent;
+    color: white;
+}
+
+#advantages{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+#advantages div{
+    background-color: #1C1C1C;
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgba(128, 128, 128, 0.138);
+    border-radius: 15px;
 }
