@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 #container {
     background-image: url(/public/home-images/background.png);
     min-height: 100vh;
@@ -33,56 +37,69 @@
 
 
 #exchange {
-    width: 520px;
-    height: 470px;
-    border: 1px solid rgba(128, 128, 128, 0.269);
-    background-color: #1a1a1a;
+    width: 500px;
+    height: 450px;
+    background: #1a1a1a;
+    border: 2px solid #070803;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #caff3373;
+    padding: 25px;
+    text-align: center;
+
+}
+
+form {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    border-radius: 10px;
+    gap: 45px;
 }
 
-#exchange span {
+form span {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
-#exchange h2 {
-    color: white;
-    text-align: left;
+h2 {
+    color: #caff33;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.from {
+.exchange-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+select,
+input {
     width: 120px;
-    border: 1px solid grey;
-    border-radius: 10px;
+    height: 40px;
+    background-color: #262626;
+    color: white;
+    border: 1px solid #caff33;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
 }
 
 #exchangeTo {
-    background-color: #22251b;
-    color: #CAFF33;
+    background: #caff337a;
+    color: #101010;
     width: 100%;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
 }
 
-select {
-    width: 100px;
-    height: 50px;
-    background-color: #22251b;
-    color: white;
-    border-radius: 10px;
-}
-
-.from {
-    font-size: 20px;
-}
-
-#exchange form {
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+#exchangeTo:hover {
+    background: #caff33;
 }
 
 #right {
@@ -343,6 +360,9 @@ select {
 
 #features {
     width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 #features-header {
@@ -369,6 +389,7 @@ select {
     display: flex;
     height: 550px;
     gap: 50px;
+    align-items: center;
 }
 
 #list {
@@ -380,9 +401,10 @@ select {
     align-items: center;
     justify-content: space-evenly;
     width: 20%;
+    border-radius: 15px;
 }
 
-#list button{
+#list button {
     width: 140px;
     height: 50px;
     border-radius: 25px;
@@ -391,16 +413,98 @@ select {
     color: white;
 }
 
-#advantages{
+#advantages {
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
 }
 
-#advantages div{
+#advantages div {
     background-color: #1C1C1C;
-    width: 90%;
+    width: 95%;
     height: 90%;
     border: 1px solid rgba(128, 128, 128, 0.138);
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    align-items: center
+}
+
+#advantages div span {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 165px;
+}
+
+#advantages div span h3 {
+    color: white;
+}
+
+#advantages div p {
+    padding-left: 45px;
+    color: grey;
+}
+
+#asked-questions {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+#questions-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#questions-header h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+#questions-header h2 span {
+    color: #CAFF33;
+}
+
+#questions-header p {
+    color: grey;
+}
+
+#questions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.question {
+    border: 1px solid rgba(128, 128, 128, 0.186);
+    height: 250px;
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+
+.question div {
+    height: 0px;
+    border: 1px solid #8080802e;
+    width: 93%;
+}
+
+.question h3 {
+    color: white;
+}
+
+.question p {
+    color: gray;
 }
