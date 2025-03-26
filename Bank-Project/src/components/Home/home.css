@@ -20,491 +20,746 @@
 
 }
 
-#top {
-    width: 90%;
-    height: 600px;
-    display: flex;
-}
-
-#left,
-#right {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-#exchange {
-    width: 500px;
-    height: 450px;
-    background: #1a1a1a;
-    border: 2px solid #070803;
-    border-radius: 20px;
-    box-shadow: 0 0 15px #caff3373;
-    padding: 25px;
-    text-align: center;
-
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-}
-
-form span {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-h2 {
-    color: #caff33;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.exchange-container {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-
-select,
-input {
-    width: 120px;
-    height: 40px;
-    background-color: #262626;
-    color: white;
-    border: 1px solid #caff33;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 16px;
-}
-
-#exchangeTo {
-    background: #caff337a;
-    color: #101010;
-    width: 100%;
-    height: 45px;
-    font-size: 18px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: bold;
-}
-
-#exchangeTo:hover {
-    background: #caff33;
-}
-
-#right {
-    background-image: url(/public/home-images/arrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#products {
-    display: flex;
-    width: 85%;
-    flex-direction: column;
-    gap: 50px;
-}
-
-#products-top {
-    display: flex;
-    width: 100%;
-    gap: 400px;
-}
-
-#header {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 50%;
-}
-
-#header h2 {
-    font-size: 2.5rem;
-    color: white;
-}
-
-#header h2 span {
-    color: #CAFF33;
-}
-
-#header p {
-    color: gray;
-}
-
-#decision {
-    display: flex;
-    width: 270px;
-    align-items: center;
-}
-
-#decision span {
-    display: flex;
-    align-items: center;
-    border: 1px solid #80808038;
-    border-radius: 62px;
-    width: 100%;
-    background-color: #1C1C1C;
-    gap: 15px;
-    justify-content: center;
-    height: 70px;
-}
-
-
-#job,
-#save,
-#money,
-#seperate,
-#customSettings,
-#cashFlow,
-.benefits div {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: #1C1C1C;
-    box-shadow: 0px 0px 3px 0px #CAFF33;
-    animation: spread 1.5s infinite alternate;
-    border-radius: 50%;
-}
-
-#job img,
-#save img,
-#money img,
-#seperate img,
-#customSettings img,
-#cashFlow img {
-    width: 30px;
-}
-
-#benefits {
-    display: flex;
-    gap: 70px;
-
-}
-
-#benefits div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-evenly;
-    border-right: 1px solid #80808036;
-    box-shadow: 20px 0px 20px 0px #121212;
-    border-radius: 10px;
-    height: 250px;
-}
-
-#benefits div h2 {
-    color: white;
-    font-weight: 300;
-    font-size: 1.3rem;
-}
-
-#benefits div p {
-    color: gray;
-
-}
-
-
-#cases {
-    width: 85%;
-}
-
-#case-head {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#case-head h2 {
-    font-size: 2.5rem;
-    color: #CAFF33;
-}
-
-#case-head p {
-    color: grey;
-}
-
-#ind {
-    height: 550px;
-    width: 85%;
-    display: flex;
-    gap: 50px;
-}
-
-#ind-left,
-#buis-right {
-    width: 50%;
-    height: 100%;
-    background-color: #1c1c1c;
-    border-radius: 15px;
-    background-image: url(../../../public/home-images/cases.png);
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-.benefits {
-    background-color: #191919;
-    width: 275px;
-    height: 180px;
-    border-radius: 10px;
-    border: 1px solid rgba(128, 128, 128, 0.113);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-#ind-right,
-#buis-left {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 120px;
-    justify-content: space-evenly;
-
-}
-
-.benefits h3 {
-    text-align: center;
-    color: white;
-    font-weight: 300;
-
-}
-
-#ind-right span,
-#buis-left span {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#ind-h2,
-#buis-h2 {
-    font-size: 2rem;
-    color: white;
-    font-weight: 300;
-}
-
-#ind-right span p {
-    color: grey;
-}
-
-.percentages {
-
-    display: flex;
-    gap: 50px;
-}
-
-.percentages span {
-    width: 150px;
-}
-
-.percent {
-    font-size: 3rem;
-    color: #caff33;
-    font-weight: 500;
-}
-
-.dashedLine {
-    height: 100%;
-    border: 1px dashed gray;
-}
-
-#ind-right button {
-    background-color: #1c1c1c;
-    color: white;
-    width: 150px;
-    height: 50px;
-    border-radius: 25px;
-    border: 1px solid #8080804d;
-
-}
-
-#buis {
-    display: flex;
-    width: 85%;
-    height: 500px;
-}
-
-#buis-left {
-    width: 50%;
-}
-
-#buis-right {
-    width: 50%;
-}
-
-
-#buis-left span p {
-    color: gray;
-}
-
-#features {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
-#features-header {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-#features-header h2 {
-    font-size: 2.5rem;
-    color: white;
-}
-
-#features-header h2 span {
-    color: #CAFF33;
-}
-
-#features-header p {
-    color: gray;
-}
-
-#features-body {
-    display: flex;
-    height: 550px;
-    gap: 50px;
-    align-items: center;
-}
-
-#list {
-    background-color: #1c1c1c;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    width: 245px;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20%;
-    border-radius: 15px;
-}
-
-#list button {
-    width: 140px;
-    height: 50px;
-    border-radius: 25px;
-    border: 1px solid rgba(128, 128, 128, 0.155);
-    background-color: transparent;
-    color: white;
-}
-
-#advantages {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-}
-
-#advantages div {
-    background-color: #1C1C1C;
-    width: 95%;
-    height: 90%;
-    border: 1px solid rgba(128, 128, 128, 0.138);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-    align-items: center
-}
-
-#advantages div span {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 165px;
-}
-
-#advantages div span h3 {
-    color: white;
-}
-
-#advantages div p {
-    padding-left: 45px;
-    color: grey;
-}
-
-#asked-questions {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-
-
-#questions-header {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#questions-header h2 {
-    font-size: 2.5rem;
-    color: white;
-}
-
-#questions-header h2 span {
-    color: #CAFF33;
-}
-
-#questions-header p {
-    color: grey;
-}
-
-#questions {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-items: center;
-}
-
-.question {
-    border: 1px solid rgba(128, 128, 128, 0.186);
-    height: 250px;
-    width: 100%;
-    padding-left: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-radius: 15px;
-}
-
-.question div {
-    height: 0px;
-    border: 1px solid #8080802e;
-    width: 93%;
-}
-
-.question h3 {
-    color: white;
-}
-
-.question p {
-    color: gray;
+@media screen and (max-width:1920px) {
+
+
+    #top {
+        width: 90%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+    }
+
+    #greet {
+        height: 300px;
+        display: none;
+    }
+
+    #greet h1 {
+        font-size: 2.8rem;
+        color: white;
+        font-weight: 600;
+    }
+
+    #greet h1 span {
+        color: #CAFF33;
+    }
+
+    #greet p {
+        color: grey;
+        line-height: 30px;
+    }
+
+
+    #left,
+    #right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #exchange {
+        width: 500px;
+        height: 450px;
+        background: #1a1a1a;
+        border: 2px solid #070803;
+        border-radius: 20px;
+        box-shadow: 0 0 15px #caff3373;
+        padding: 25px;
+        text-align: center;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    form span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    h2 {
+        color: #caff33;
+        font-size: 24px;
+    }
+
+    .exchange-container {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    select,
+    input {
+        width: 120px;
+        height: 40px;
+        background-color: #262626;
+        color: white;
+        border: 1px solid #caff33;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #exchangeTo {
+        background: #caff337a;
+        color: #101010;
+        width: 100%;
+        height: 45px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    #exchangeTo:hover {
+        background: #caff33;
+    }
+
+    #right {
+        background-image: url(/public/home-images/arrow.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #products {
+        display: flex;
+        width: 85%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #products-top {
+        display: flex;
+        width: 100%;
+        gap: 400px;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+    }
+
+    #header h2 {
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    #header h2 span {
+        color: #CAFF33;
+    }
+
+    #header p {
+        color: gray;
+    }
+
+    #decision {
+        display: flex;
+        width: 270px;
+        align-items: center;
+    }
+
+    #decision span {
+        display: flex;
+        align-items: center;
+        border: 1px solid #80808038;
+        border-radius: 62px;
+        width: 100%;
+        background-color: #1C1C1C;
+        gap: 15px;
+        justify-content: center;
+        height: 70px;
+    }
+
+
+    #job,
+    #save,
+    #money,
+    #seperate,
+    #customSettings,
+    #cashFlow,
+    .benefits div {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: #1C1C1C;
+        box-shadow: 0px 0px 3px 0px #CAFF33;
+        animation: spread 1.5s infinite alternate;
+        border-radius: 50%;
+    }
+
+    #job img,
+    #save img,
+    #money img,
+    #seperate img,
+    #customSettings img,
+    #cashFlow img {
+        width: 30px;
+    }
+
+    #benefits {
+        display: flex;
+        gap: 70px;
+
+    }
+
+    #benefits div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        border-right: 1px solid #80808036;
+        box-shadow: 20px 0px 20px 0px #121212;
+        border-radius: 10px;
+        height: 250px;
+    }
+
+    #benefits div h2 {
+        color: white;
+        font-weight: 300;
+        font-size: 1.3rem;
+    }
+
+    #benefits div p {
+        color: gray;
+
+    }
+
+
+    #cases {
+        width: 85%;
+    }
+
+    #case-head {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #case-head h2 {
+        font-size: 2.5rem;
+        color: #CAFF33;
+    }
+
+    #case-head p {
+        color: grey;
+    }
+
+    #ind {
+        height: 550px;
+        width: 85%;
+        display: flex;
+        gap: 50px;
+    }
+
+    #ind-left,
+    #buis-right {
+        width: 50%;
+        height: 100%;
+        background-color: #1c1c1c;
+        border-radius: 15px;
+        background-image: url(../../../public/home-images/cases.png);
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .benefits {
+        background-color: #191919;
+        width: 90%;
+        height: 180px;
+        border-radius: 10px;
+        border: 1px solid rgba(128, 128, 128, 0.113);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #ind-right,
+    #buis-left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        justify-content: space-evenly;
+
+    }
+
+    .benefits h3 {
+        text-align: center;
+        color: white;
+        font-weight: 300;
+
+    }
+
+    #ind-right span,
+    #buis-left span {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #ind-h2,
+    #buis-h2 {
+        font-size: 2rem;
+        color: white;
+        font-weight: 300;
+    }
+
+    #ind-right span p {
+        color: grey;
+    }
+
+    .percentages {
+
+        display: flex;
+        gap: 50px;
+    }
+
+    .percentages span {
+        width: 150px;
+    }
+
+    .percent {
+        font-size: 3rem;
+        color: #caff33;
+        font-weight: 500;
+    }
+
+    .dashedLine {
+        height: 100%;
+        border: 1px dashed gray;
+    }
+
+    #ind-right button {
+        background-color: #1c1c1c;
+        color: white;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        border: 1px solid #8080804d;
+
+    }
+
+    #log a{
+        color: black;
+    }
+
+    #buis {
+        display: flex;
+        width: 85%;
+        height: 500px;
+    }
+
+    #buis-left {
+        width: 50%;
+    }
+
+    #buis-right {
+        width: 50%;
+    }
+
+
+    #buis-left span p {
+        color: gray;
+    }
+
+    #features {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #features-header {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #features-header h2 {
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    #features-header h2 span {
+        color: #CAFF33;
+    }
+
+    #features-header p {
+        color: gray;
+    }
+
+    #features-body {
+        display: flex;
+        height: 550px;
+        gap: 50px;
+        align-items: center;
+    }
+
+    #list {
+        background-color: #1c1c1c;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        width: 245px;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 20%;
+        border-radius: 15px;
+    }
+
+    #list button {
+        width: 140px;
+        height: 50px;
+        border-radius: 25px;
+        border: 1px solid rgba(128, 128, 128, 0.155);
+        background-color: transparent;
+        color: white;
+    }
+
+    #advantages {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+
+    #advantages div {
+        background-color: #1C1C1C;
+        width: 95%;
+        height: 90%;
+        border: 1px solid rgba(128, 128, 128, 0.138);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        align-items: center
+    }
+
+    #advantages div span {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 165px;
+    }
+
+    #advantages div span h3 {
+        color: white;
+    }
+
+    #advantages div p {
+        padding-left: 45px;
+        color: grey;
+    }
+
+    #asked-questions {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+
+    #questions-header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #questions-header h2 {
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    #questions-header h2 span {
+        color: #CAFF33;
+    }
+
+    #questions-header p {
+        color: grey;
+    }
+
+    #questions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .question {
+        border: 1px solid rgba(128, 128, 128, 0.186);
+        height: 250px;
+        width: 100%;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 15px;
+    }
+
+    .question div {
+        height: 0px;
+        border: 1px solid #8080802e;
+        width: 93%;
+    }
+
+    .question h3 {
+        color: white;
+    }
+
+    .question p {
+        color: gray;
+    }
+}
+
+
+@media screen and (max-width:1440px) {
+    #top {
+        gap: 50px;
+    }
+
+    #greet {
+        display: block;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #benefits div p {
+        font-size: 0.9rem;
+    }
+
+    #header h2,
+    #case-head h2 {
+        font-size: 2.3rem;
+    }
+
+    .benefits h3 {
+        font-size: 1rem;
+    }
+
+    #ind-h2 {
+        font-size: 1.8rem;
+    }
+
+    .percent {
+        font-size: 2.5rem;
+    }
+
+    .percentages span p {
+        font-size: 0.9rem;
+    }
+
+    #features-header h2 {
+        font-size: 2.3rem;
+    }
+
+    #questions-header h2 {
+        font-size: 2.3rem;
+    }
+
+    .question h3 {
+
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    #top {
+        flex-direction: column;
+        width: 85%;
+        min-height: 100vh;
+    }
+
+    #greet {
+        width: 85%;
+        text-align: center;
+    }
+
+    #products-top {
+        gap: 150px;
+    }
+
+    #products {
+        align-items: center;
+    }
+
+    #benefits {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    #ind {
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    #ind-left {
+        width: 85%;
+    }
+
+    .benefits {
+        background: transparent;
+        border: none;
+    }
+
+    #ind-right {
+        width: 85%;
+        gap: 45px;
+    }
+
+    #buis {
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+
+    }
+
+    #buis-left {
+        width: 85%;
+    }
+
+    #buis-right {
+        width: 85%;
+    }
+
+    #features-body {
+        flex-direction: column;
+    }
+
+    #list {
+        flex-direction: row;
+        height: 100px;
+        width: 400px;
+        background: transparent;
+    }
+
+    #advantages {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    #left {
+        width: 70%;
+    }
+
+    #advantages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #features-body {
+        height: 100vh;
+    }
+
+    #questions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #questions-header {
+        text-align: center
+    }
+
+}
+
+@media screen and (max-width:425px) {
+
+    #products-top{
+        gap: 65px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    #questions-header h2{
+        font-size: 2rem;
+    }
+
+    #header{
+        width: 70%;
+    }
+
+    #greet {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        min-height: 50vh;
+    }
+
+    #greet h1 {
+        font-size: 2.3rem;
+    }
+
+    #ind {
+        height: 160vh;
+    }
+
+    #ind-left {
+        height: 35%;
+    }
+
+    .percentages {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #buis {
+        min-height: 160vh;
+    }
+
+    #buis-right {
+        height: 35%;
+    }
+
+    #ind-right {
+        justify-content: center;
+    }
+
+    #buis-left {
+        justify-content: center;
+        gap: 65px;
+    }
+
+    #advantages div span {
+        gap: 50px;
+    }
+
+    #features-header {
+        width: 100%;
+        text-align: center;
+    }
 }

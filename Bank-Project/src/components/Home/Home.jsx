@@ -79,6 +79,11 @@ const Home = () => {
 
             <main id="home">
                 <div id="top">
+                    <div id="greet">
+                        <h1>Welcome to YourBank
+                            Empowering Your <span>Financial Journey</span></h1>
+                        <p>At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</p>
+                    </div>
                     <div id="left">
                         <div id="exchange">
                             <h2>Money Exchange</h2>

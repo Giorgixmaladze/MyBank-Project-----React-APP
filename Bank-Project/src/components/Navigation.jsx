@@ -1,6 +1,7 @@
 import logo from "./regitsrations/images/logo.png"
 import close from "./regitsrations/images/close.png"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 
 const Navigation = () => {
@@ -25,15 +26,15 @@ const Navigation = () => {
 
                     <nav>
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Careers</a></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/careers">Careers</Link></li>
                             <li><a href="">About</a></li>
                             <li><a href="">Security</a></li>
                         </ul>
                     </nav>
                     <div id="registrationLinks">
-                        <a href="">Sign up</a>
-                        <button>Login</button>
+                        <Link to='/signup'>Sign up</Link>
+                        <button id="log"> <Link to= "/login">Login</Link></button>
                     </div>
 
                     <button id="burgerMenu" onClick={openSidebar}></button>

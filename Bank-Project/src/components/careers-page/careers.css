@@ -1,0 +1,124 @@
+header{
+    width:100%;
+}
+
+
+#block {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+
+#introduction {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#introduction-child {
+    height: 100%;
+    width: 85%;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+}
+
+#welcome {
+    height: 375px;
+    width: 40%;
+    background-color: #191919;
+    border-bottom-right-radius: 100px;
+    height: 340px;
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#welcome-header {
+    width: 75%;
+}
+
+
+#welcome h1 {
+    font-size: 2.3rem;
+    color: white
+}
+
+#welcome-header span {
+    color: #CAFF33;
+}
+
+
+#welcome-description {
+    width: 75%;
+}
+
+#welcome-description p {
+    color: grey;
+    font-size: 1rem;
+
+    line-height: 25px;
+}
+
+#img {
+    background-image: url(../../../public/careers-images/Abstract\ Design.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 290px;
+    background-position: top right;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 290px;
+    background-position: top right;
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+#img div {
+    background-image: url(../../../public/careers-images/people.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85%;
+    background-position: center right;
+    background-size: 800px;
+}
+
+
+#values{
+    width: 85%;
+}
+
+
+#values-header{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#values-header h2{
+    color: white;
+    font-size: 2.2rem;
+}
+
+#values-header h2 span{
+    color: #CAFF33;
+}
+
+#values-header p {
+    color: grey
+}
