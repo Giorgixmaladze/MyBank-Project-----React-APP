@@ -1,5 +1,5 @@
-header{
-    width:100%;
+header {
+    width: 100%;
 }
 
 
@@ -98,27 +98,62 @@ header{
 }
 
 
-#values{
+#values {
     width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 
-#values-header{
+#values-header {
     width: 80%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#values-header h2{
+#values-header h2 {
     color: white;
     font-size: 2.2rem;
 }
 
-#values-header h2 span{
+#values-header h2 span {
     color: #CAFF33;
 }
 
 #values-header p {
     color: grey
+}
+
+#values-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    height: 400px;
+}
+
+.value {
+    border-left: 1px solid #CAFF33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value h2 {
+    color: #5b5b5b;
+    font-size: 2.5rem;
+}
+
+.value p {
+    color: grey;
+}
+
+
+
+.value div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
 }
