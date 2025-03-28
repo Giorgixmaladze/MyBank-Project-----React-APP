@@ -28,7 +28,7 @@ const Navigation = () => {
                         <ul>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/careers">Careers</Link></li>
-                            <li><a href="">About</a></li>
+                            <li><Link to="/about">About</Link></li>
                             <li><a href="">Security</a></li>
                         </ul>
                     </nav>
@@ -41,7 +41,7 @@ const Navigation = () => {
                 </div>
             </header>
 
-            <div id="sidebar" style={{ display: condition === true ? "flex" : "none" }}>
+            <div id="sidebar" style={{ display: condition === true ? "flex" : "none", zIndex: condition === true ? 1000:0 }}>
                 <div id="back">
                     <div id="sidebar-temp">
                         <div id="head">

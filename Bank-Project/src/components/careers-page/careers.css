@@ -157,3 +157,219 @@ header {
     flex-direction: column;
     gap: 45px;
 }
+
+
+#careers-benefits {
+    min-height: 100vh;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#careers-benefits-header {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#careers-benefits-header h2 {
+    color: white;
+    font-size: 2.3rem;
+}
+
+#careers-benefits-header h2 span {
+    color: #CAFF33;
+}
+
+#careers-benefits-header p {
+    color: gray;
+}
+
+#careers-benefits-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+}
+
+.body-block {
+    border: 1px dashed rgba(128, 128, 128, 0.114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.career-benefit {
+    background: #1c1c1c;
+    height: 80%;
+    width: 90%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    box-shadow: 0px 0px 20px #2f652185
+}
+
+
+
+.career-benefit span {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 50px;
+}
+
+.career-benefit span div {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #1C1C1C;
+    box-shadow: 0px 0px 3px 0px #CAFF33;
+    animation: spread 1.5s infinite alternate;
+    border-radius: 50%;
+}
+
+.career-benefit span h4 {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.career-benefit p {
+    color: grey;
+    line-height: 25px;
+    width: 80%;
+}
+
+@media screen and (max-width:1440px) {
+    #block {
+        gap: 80px;
+    }
+
+    #welcome {
+        top: 80px;
+    }
+
+    #welcome-header h1 {
+        font-size: 2rem;
+    }
+
+    #img div {
+        background-size: 720px;
+    }
+
+    #values-header h2 {
+        font-size: 2rem;
+    }
+
+    .value h2 {
+        font-size: 2.3rem;
+    }
+
+    #careers-benefits-header h2 {
+        font-size: 2rem;
+    }
+
+    #careers-benefits-body {
+        height: 100vh;
+    }
+
+    .career-benefit {
+        gap: 40px;
+    }
+
+    .career-benefit span div {
+        width: 50px;
+        height: 50px;
+    }
+
+    .career-benefit span div img {
+        width: 25px;
+    }
+}
+
+
+
+@media screen and (max-width:1360px) {
+    #introduction {
+        height: 800px;
+    }
+
+    #introduction-child {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #welcome {
+        position: static;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    #img {
+        padding-right: 0;
+    }
+
+
+    #img div {
+        background-size: 590px;
+        background-position: center;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    
+
+    #values{
+        min-height: 100vh;
+    }
+
+    #values-header h2{
+        font-size: 1.9rem;
+    }
+
+    #values-body{
+        height: 435px;
+    }
+    .value div h2{
+        font-size: 2rem;
+    }
+    #careers-benefits-header h2{
+        font-size: 1.9rem;
+    }
+    #careers-benefits-body{
+        grid-template-columns: 1fr;
+        height: 200vh;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    #values-body{
+        grid-template-columns: 1fr;
+        height: 800px;
+    }
+    #welcome{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+   #welcome{
+    height: 100%;
+   }
+   #values-body{
+    height: 1000px;
+   }
+   #img div{
+    background-size: 315px;
+   }
+}

@@ -1,10 +1,13 @@
+import Footer from "../footer"
 import Navigation from "../Navigation"
+import { setQuestions } from "../utils/choice"
 import "./careers.css"
 
 const Careers = () => {
-
+    const questions = setQuestions()
 
     return (
+        <>
         <div id="block">
             <Navigation />
 
@@ -61,10 +64,86 @@ const Careers = () => {
                 </div>
 
             </div>
+            <div id="careers-benefits">
+                <div id="careers-benefits-header">
+                    <h2>Our <span>Benefits</span></h2>
+                    <p>At YourBank, we value our employees and are dedicated to their well-being and success. We offer a comprehensive range of benefits designed to support their personal and professional growth.</p>
+                </div>
+                <div id="careers-benefits-body">
+                    <div className="body-block">
+                        <div className="career-benefit">
+                            <span>
+                                <div>
+                                    <img src="public/careers-images/stats.png" alt="" />
+                                </div>
+                                <h4>Competitive Compensation</h4>
+                            </span>
+                            
+                                <p>We provide a competitive salary package that recognizes the skills and expertise of our employees. YourBank believes in rewarding exceptional performance and offering opportunities for financial growth.</p> 
+                            
+                           
+                        </div>
+                    </div>
+                    <div className="body-block">
+                        <div className="career-benefit">
+                            <span>
+                                <div>
+                                    <img src="public/careers-images/light.png" alt="" />
+                                </div>
+                                <h4>Health and Wellness</h4>
+                            </span>
+                            <p>We prioritize the health and well-being of our employees by providing comprehensive medical, dental, and vision insurance plans. We also offer wellness programs, gym memberships, and resources to support a healthy lifestyle.</p>
+                        </div>
+                    </div>
+                    <div className="body-block">
+                        <div className="career-benefit">
+                            <span>
+                                <div>
+                                    <img src="public/careers-images/job.png" alt="" />
+                                </div>
+                                <h4>Retirement Planning</h4>
+                            </span>
+                            <p>YourBank is committed to helping employees plan for their future. We offer a retirement savings plan with a generous employer match to help them build a secure financial foundation for the long term.</p>
+                        </div>
+                    </div>
+                    <div className="body-block">
+                        <div className="career-benefit">
+                            <span>
+                                <div>
+                                    <img src="public/careers-images/stack.png" alt="" />
+                                </div>
+                                <h4>Work-Life Balance</h4>
+                            </span>
+                            <p>We understand the importance of maintaining a healthy work-life balance. YourBank offers flexible work arrangements, paid time off, parental leave, and other programs that support employees in managing their personal and professional commitments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="asked-questions">
+                    <span id="questions-header">
+                        <h2><span>Frequently</span> Asked Questions</h2>
+                        <p>Still you have any questions? Contact our Team via support@yourbank.com</p>
+                    </span>
+                    <div id="questions">
+                        {
+                            questions.map(item => {
+                                return (
+                                    <div className="question">
+                                        <h3>{item.question}</h3>
+                                        <div></div>
+                                        <p>{item.answer}</p>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+            </div>
 
 
-
+            
         </div>
+        <Footer />
+        </>
     )
 
 
