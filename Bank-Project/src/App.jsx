@@ -6,6 +6,7 @@ import Login from './components/regitsrations/Login';
 import Home from './components/Home/Home';
 import Careers from './components/careers-page/Careers';
 import About from './components/about-page/About';
+import Security from './components/security-page/Security';
 function App() {
   const navigate = useNavigate()
   const signedUp = localStorage.getItem("signed")
@@ -30,6 +31,7 @@ function App() {
       <Route path='/' element ={<Home />} />
       <Route path='/careers' element = {<Careers />}/>
       <Route path='/about' element = {<About />}/>
+      <Route path='/security' element ={<Security />} />
     </Routes>
 
   )
