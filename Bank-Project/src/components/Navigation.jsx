@@ -29,7 +29,7 @@ const Navigation = () => {
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/careers">Careers</Link></li>
                             <li><Link to="/about">About</Link></li>
-                            <li><a href="">Security</a></li>
+                            <li><Link to="/security">Security</Link></li>
                         </ul>
                     </nav>
                     <div id="registrationLinks">
