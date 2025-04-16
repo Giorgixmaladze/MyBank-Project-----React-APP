@@ -34,14 +34,14 @@ const Navigation = () => {
                     </nav>
                     <div id="registrationLinks">
                         <Link to='/signup'>Sign up</Link>
-                        <button id="log"> <Link to= "/login">Login</Link></button>
+                        <button id="log"> <Link to="/login">Login</Link></button>
                     </div>
 
                     <button id="burgerMenu" onClick={openSidebar}></button>
                 </div>
             </header>
 
-            <div id="sidebar" style={{ display: condition === true ? "flex" : "none", zIndex: condition === true ? 1000:0 }}>
+            <div id="sidebar" style={{ display: condition === true ? "flex" : "none", zIndex: condition === true ? 1000 : 0 }}>
                 <div id="back">
                     <div id="sidebar-temp">
                         <div id="head">
@@ -51,11 +51,16 @@ const Navigation = () => {
                         </div>
                         <div id="body">
                             <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Careers</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Security</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/careers">Careers</Link></li>
+                                <li><Link to="/about">About</Link></li>
+                                <li><Link to="/security">Security</Link></li>
                             </ul>
+                            <span>
+                                <Link to='/signup'>Sign up</Link>
+                                <button id="log"> <Link to="/login">Login</Link></button>
+                            </span>
+
                         </div>
 
                     </div>

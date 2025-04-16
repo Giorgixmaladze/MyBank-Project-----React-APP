@@ -2,6 +2,7 @@ import logo from "./regitsrations/images/logo.png"
 import mail from "./regitsrations/images/mail.png"
 import phone from "./regitsrations/images/phone.png"
 import location from "./regitsrations/images/location.png"
+import { Link } from "react-router-dom"
 
 const Footer= () => {
     return(
@@ -13,10 +14,10 @@ const Footer= () => {
                 </div>
                 <div id="pages">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Security</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/careers">Careers</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/security">Security</Link></li>
                     </ul>
                 </div>
             </div>
